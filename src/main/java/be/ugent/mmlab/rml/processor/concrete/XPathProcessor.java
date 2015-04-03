@@ -101,6 +101,12 @@ public class XPathProcessor extends AbstractRMLProcessor {
        dnc.declarePrefix("xsi", "http://www.w3.org/2001/XMLSchema-instance");
        this.nsContext.addNamespace("tp", "http://www.plazi.org/taxpub");
        dnc.declarePrefix("tp", "http://www.plazi.org/taxpub");
+
+       //jgl@spaceapplications.com
+       this.nsContext.addNamespace("wfs","http://www.opengis.net/wfs");
+       dnc.declarePrefix("wfs", "http://www.opengis.net/wfs");
+       this.nsContext.addNamespace("IBGE", "http://www.ibgebim.be/base_plan");
+       dnc.declarePrefix("IBGE", "http://www.ibgebim.be/base_plan");
        
        return dnc;
     }
